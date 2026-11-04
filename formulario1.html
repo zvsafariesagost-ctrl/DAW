@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoteles El Paraiso</title>
+</head>
+<body bgcolor="#b8d4d4">
+  <h2 align="right"><font color="#3a5fcd">Hoteles El Paraiso</font></h2>
+  <h3>Sistema de reserva de habitaciones:</h3>
+  
+  <form action="#" method="post">
+    <p>
+      <label for="nombre">Introduzca su nombre:</label>
+      <input type="text" id="nombre" name="nombre" size="40" required>
+    </p>
+    
+    <p>
+      <label for="clave">Introduzca una clave para su identificación (4 letras):</label>
+      <input type="text" id="clave" name="clave" size="4" minlength="4" maxlength="4" required>
+    </p>
+    
+    <p>Tipo de habitación</p>
+    <p>
+	  <input type="radio" id="individual" name="habitacion" value="individual">
+	  <label for="individual">Individual</label>
+	  
+      <input type="radio" id="doble" name="habitacion" value="doble" checked>
+      <label for="doble">Doble</label>
+    </p>
+    
+    <p>Opciones extra:</p>
+    <p>
+      <input type="checkbox" id="desayuno" name="extra" value="desayuno" checked>
+      <label for="desayuno">Desayuno en cama</label>
+      
+      <input type="checkbox" id="jakuzzi" name="extra" value="jakuzzi">
+      <label for="jakuzzi">Jakuzzi</label>
+      
+      <input type="checkbox" id="climatizador" name="extra" value="climatizador">
+      <label for="climatizador">Climatizador</label>
+    </p>
+    
+    <p align="right">
+      <input type="image" src="enviame.png">
+    </p>
+  </form>
+</body>
+</html>

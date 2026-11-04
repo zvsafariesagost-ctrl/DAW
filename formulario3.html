@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+</head>
+<body>
+
+  <h3>Formulario con tablas</h3>
+  <form action="enviado.html">
+    <fieldset>
+      <legend>Datos Personales</legend>
+      <table>
+        <tr>
+          <td><label for="nombre_t">Nombre:</label></td>
+          <td><input type="text" id="nombre_t" name="nombre" maxlength="30" placeholder="Escribe tu nombre"></td>
+        </tr>
+        <tr>
+          <td><label for="apellidos_t">Apellidos:</label></td>
+          <td><input type="text" id="apellidos_t" name="apellidos" maxlength="30"></td>
+        </tr>
+        <tr>
+          <td>Género:</td>
+          <td>
+            <label>Hombre <input type="radio" name="genero" value="hombre"></label>
+            <label>Mujer <input type="radio" name="genero" value="mujer"></label>
+            <label>Prefiero no decirlo <input type="radio" name="genero" value="nodecirlo"></label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email_t">Email:</label></td>
+          <td><input type="email" id="email_t" name="email" placeholder="correo@gmail.com" required></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <table>
+        <tr>
+          <td><label for="asunto_t">Asunto</label></td>
+          <td>
+            <select id="asunto_t" name="asunto" size="3">
+              <option>Pedir presupuesto web</option>
+              <option>Solicitar cita previa</option>
+              <option selected>Otros</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="asunto2_t">Asunto 2</label></td>
+          <td>
+            <input type="text" id="asunto2_t" name="asunto2" list="opciones_t">
+            <datalist id="opciones_t">
+              <option value="Pedir presupuesto web">
+              <option value="Solicitar cita previa">
+              <option value="Otros">
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">¿Cómo nos ha conocido?</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label><input type="checkbox" name="conocido" value="amigo"> Un amigo</label>
+            <label><input type="checkbox" name="conocido" value="google"> Googleando</label>
+            <label><input type="checkbox" name="conocido" value="buzoneo"> Buzoneo</label>
+            <label><input type="checkbox" name="conocido" value="otros"> Otros</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><label for="mensaje_t">Escribe tu mensaje</label></td>
+        </tr>
+        <tr>
+          <td colspan="2"><textarea id="mensaje_t" name="mensaje" cols="60" rows="12" maxlength="300"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" id="rgpd_t" name="rgpd" required>
+            <label for="rgpd_t">He leído y acepto el <a href="#">aviso legal y la política de privacidad</a>.</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="ENVIAR"></td>
+        </tr>
+      </table>
+    </fieldset>
+    <p><mark>ZINEB VALERO SAFAR</mark></p>
+  </form>
+
+  <hr>
+
+  <h3>Formulario con párrafos</h3>
+  <form action="enviado.html">
+    <fieldset>
+      <legend>Datos Personales</legend>
+      <p>
+        <label for="nombre_p">Nombre:</label>
+        <input type="text" id="nombre_p" name="nombre" maxlength="30" placeholder="Escribe tu nombre">
+      </p>
+      <p>
+        <label for="apellidos_p">Apellidos:</label>
+        <input type="text" id="apellidos_p" name="apellidos" maxlength="30">
+      </p>
+      <p>
+        Género:
+        <label>Hombre <input type="radio" name="genero" value="hombre"></label>
+        <label>Mujer <input type="radio" name="genero" value="mujer"></label>
+        <label>Prefiero no decirlo <input type="radio" name="genero" value="nodecirlo"></label>
+      </p>
+      <p>
+        <label for="email_p">Email:</label>
+        <input type="email" id="email_p" name="email" placeholder="correo@gmail.com" required>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <p>
+        <label for="asunto_p">Asunto</label>
+        <select id="asunto_p" name="asunto" size="3">
+          <option>Pedir presupuesto web</option>
+          <option>Solicitar cita previa</option>
+          <option selected>Otros</option>
+        </select>
+      </p>
+      <p>
+        <label for="asunto2_p">Asunto 2</label>
+        <input type="text" id="asunto2_p" name="asunto2" list="opciones_p">
+        <datalist id="opciones_p">
+          <option value="Pedir presupuesto web">
+          <option value="Solicitar cita previa">
+          <option value="Otros">
+        </datalist>
+      </p>
+      <p>¿Cómo nos ha conocido?</p>
+      <p>
+        <label><input type="checkbox" name="conocido" value="amigo"> Un amigo</label>
+        <label><input type="checkbox" name="conocido" value="google"> Googleando</label>
+        <label><input type="checkbox" name="conocido" value="buzoneo"> Buzoneo</label>
+        <label><input type="checkbox" name="conocido" value="otros"> Otros</label>
+      </p>
+      <p>
+        <label for="mensaje_p">Escribe tu mensaje</label><br>
+        <textarea id="mensaje_p" name="mensaje" cols="60" rows="12" maxlength="300"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" id="rgpd_p" name="rgpd" required>
+        <label for="rgpd_p">He leído y acepto el <a href="#">aviso legal y la política de privacidad</a>.</label>
+      </p>
+      <p>
+        <input type="submit" value="ENVIAR">
+      </p>
+    </fieldset>
+    <p><mark>ZINEB VALERO SAFAR</mark></p>
+  </form>
+
+</body>
+</html>
